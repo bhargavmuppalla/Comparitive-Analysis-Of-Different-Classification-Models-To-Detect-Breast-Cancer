@@ -38,5 +38,65 @@ For each picture, the mean, standard error, and "worst" or largest (mean of the 
 B. Objectives
 The goal of this study is to identify which traits are most useful in predicting whether a cancer is malignant or benign, as well as to look for general trends that can help with model selection and hyper parameter selection. The objective is to determine if the cancer is benign or malignant. I did this by fitting a function that can predict the discrete class of fresh input using machine learning classification algorithms.
 ## III.	DATA EXPLORATION
+Class distribution:
+Benign: 458 (65.5%)
+Malignant: 241 (34.5%)
+
+Cancer data set dimensions: (569, 32)
+The data set has 569 rows and 32 columns, as can be seen. The column we'll anticipate is 'Diagnosis,' which indicates whether the malignancy is M = malignant or B = benign. The number 1 indicates that the cancer is malignant, whereas the number 0 indicates that it is benign. We can see that 357 of the 569 people are designated as B (benign) and 212 are labeled as M (malignant).
+#### A.	Missing Data
+The dataset has no null or missing values.
+#### B.	Categorical Data
+Categorical data consists of variables with label values rather than numeric values. The number of available values is frequently restricted to a small number.
+Users are often classified by nation, gender, age group, and other factors.
+
+Label Encoder was used to label the categorical data. Label Encoder is a Python module that is used to transform categorical input, such as text data, into numbers that our predictive models can understand better.
+## IV.	SPLITTING THE DATASET
+The data we utilize is divided into two categories: training data and test data. The training set comprises a known output, and the model learns from it to generalize to new data in the future. To test our model's prediction on this subset, we have the test dataset (or subset). Data is split in the ratio of 75:25 (75% for training and 25% for testing) 
+
+We did this using SciKit-Learn library in Python using the train_test_split method.
+## V.	FEATURE SCALING
+Dataset will almost always contain features with a wide range of magnitudes, units, and ranges. However, most machine learning algorithms compute the Euclidian distance between two data points. All characteristics must be brought to the same magnitude level. This may be accomplished by scaling.
+This means data transformed so that it fits within a specific scale, like 0–100 or 0–1.
+## VI.	MODEL SELECTION
+Supervised learning is a form of system in which both the desired input and output data are given. To offer a learning framework for future data processing, input and output data are labeled for categorization. Regression and classification issues are two types of supervised learning tasks.
+
+When the output variable is a real or continuous value, such as "salary" or "weight," you have a regression problem.
+
+When the output variable is a category, such as filtering emails as "spam" or "not spam," the problem is called a classification problem.
+
+Unsupervised Learning: Unsupervised learning is when an algorithm uses data that hasn't been classed or labeled and allows it to operate on it without being guided.
+
+In our dataset, the outcome variable, or dependent variable, Y, has just two sets of values: M (Malign) or B (Balance) (Benign). As a result, we used the supervised learning method Classification
+
+#### A.Classification Algorithms
+We used 7 different classification algorithms to solve the problem. 
+1.Logistic Regression
+2.KNN (K nearest neighbors)
+3.SVM (support vector machines)
+4.Kernel SVM
+5.Naive Bayes
+6.Decision Tree Algorithm
+7.Random Forest Classification
+
+We used sklearn library to import all methods of classification algorithms.
+## VII.	RESULTS
+We Applied different classification models on the same dataset and compared their accuracies. We Validated the robustness of models by removing some of the features and observed how particular features affecting the performance of the model.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
