@@ -37,3 +37,6 @@ Ten real-valued features are computed for each cell nucleus:
 For each picture, the mean, standard error, and "worst" or largest (mean of the three largest values) features were computed, yielding 30 features. For example, field 3 represents Mean Radius, field 13 represents Radius SE, and field 23 represents Worst Radius.
 B. Objectives
 The goal of this study is to identify which traits are most useful in predicting whether a cancer is malignant or benign, as well as to look for general trends that can help with model selection and hyper parameter selection. The objective is to determine if the cancer is benign or malignant. I did this by fitting a function that can predict the discrete class of fresh input using machine learning classification algorithms.
+## III.	DATA EXPLORATION
+
+
