@@ -82,6 +82,43 @@ We used 7 different classification algorithms to solve the problem.
 We used sklearn library to import all methods of classification algorithms.
 ## VII.	RESULTS
 We Applied different classification models on the same dataset and compared their accuracies. We Validated the robustness of models by removing some of the features and observed how particular features affecting the performance of the model.
+#### A.	Accuracies with all features
+![With all features](https://github.com/bhargavmuppalla/Comparitive-Analysis-Of-ML-Models/blob/main/results/withallfeatures.png)
+Fig: Comparative Analysis of Different Classification Models in Detecting Breast Cancer including all 32 features available.
+
+With all 32 features Random Forest Algorithm performs better with an accuracy of 98.6%.
+#### B.	Without mean feartures
+Dataset contains features like radius_mean, texture_mean, perimeter_mean etc., these are the mean values of raw values of radius ,texture, perimeter. We excluded these features and applied models to check their accuracies.
+
+With mean features excluded, accuracy of Random Forest Algorithm drops, and Kernel SVM performs best in this case. From which we can observe that different algorithms perform differently with different kind of features.
+![with out mean features](https://github.com/bhargavmuppalla/Comparitive-Analysis-Of-ML-Models/blob/main/results/without_mean_features.png)
+Fig: Comparative Analysis of Different Classification Models in Detecting Breast Cancer Excluding all mean features
+
+#### C.	Without standard error features
+Dataset contains features like radius_se, texture_se, perimeter_se etc., these are the standard error values of raw values of radius ,texture, perimeter. We excluded these features and applied models to check their accuracies.
+![with out se features](https://github.com/bhargavmuppalla/Comparitive-Analysis-Of-ML-Models/blob/main/results/without_se_features.png)
+Fig: Comparative Analysis of Different Classification Models in Detecting Breast Cancer Excluding all standard error features.
+
+With mean features excluded, SVM and Random Forrest models performs.
+#### D.	Without Worst features
+Dataset contains features like radius_worst, texture_worst, perimeter_worst etc., these are the worst values of raw values of radius ,texture, perimeter. We excluded these features and applied models to check their accuracies.
+![with out worst features](https://github.com/bhargavmuppalla/Comparitive-Analysis-Of-ML-Models/blob/main/results/without_worst_featues.png)
+
+From observations of the results, we find the features tagged as worst are most influential features. Performance of all the models decreased without these features. Random forest performs best among all models with 92.3% accuracy.
+## VIII.	CONCLUSION
+Finally, we've created our classification model, and we've discovered that the Random Forest Classification method produces the best results for our dataset. It isn't necessarily relevant to all datasets, though. To select a model, we must first assess our dataset before using our machine learning model. We also tested our models 
+Robustness with subsets of features.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
